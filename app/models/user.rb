@@ -8,4 +8,6 @@ class User < ApplicationRecord
   has_many :tweets
 
   validates :username, uniqueness: true
+
+  has_one_attached :profile_image
 end
